@@ -1,0 +1,264 @@
+<!--Resume for Practical 3(a)-->
+<!DOCTYPE HTML> 
+<html>
+  <head>
+      <title>Resume</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+		<style>
+.title{
+    color:aliceblue;
+    font-family: "Poppins", "Popins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-image: url(images/bgt.png);
+    background-color: rgba(9, 6, 42, 0.653);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode:overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:150px 0px;
+}
+.title_name,.title_image{
+    margin:50px; 
+}
+.title_name{
+    border-left: 2px solid aliceblue;
+}
+.title_name-name {
+    padding-left: 20px;
+    font-size: 3.2rem;
+}
+.title_name-qoute{
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 20px;
+    color: aliceblue;
+    padding-left: 20px;
+
+}
+.title_image{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(52, 59, 134);
+    margin-left: 100px;
+    flex-shrink: 0;
+}
+.title_image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .title {
+        padding: 80px 20px;
+    }
+    .title_image {
+        margin: 20px;
+        margin-left: 20px;
+        width: 200px;
+        height: 200px;
+    }
+    .title_name {
+        margin: 20px;
+    }
+    .title_name-name {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 50px 20px;
+        background-attachment: scroll;
+    }
+    .title_image {
+        margin: 0 0 25px 0;
+        margin-left: 0;
+        width: 180px;
+        height: 180px;
+    }
+    .title_name {
+        margin: 0;
+        border-left: none;
+        border-top: 2px solid aliceblue;
+        padding-top: 20px;
+    }
+    .title_name-name {
+        padding-left: 0;
+        font-size: 1.8rem;
+    }
+    .title_name-qoute {
+        padding-left: 0;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        padding: 40px 15px;
+    }
+    .title_image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .title_name-name {
+        font-size: 1.5rem;
+    }
+    .title_name-qoute {
+        font-size: 0.9rem;
+    }
+}
+		</style>
+</head>
+<body>
+	<header class="navbar">
+		<nav class="navbar_menu">
+				<div class="navbar_menu-link"><a href="#about">About Me</a></div>
+				<div class="navbar_menu-link"><a href="#edu">Education</a></div>
+				<div class="navbar_menu-link"><a href="#skill">Skills</a></div>
+				<div class="navbar_menu-link"><a href="#proj">Projects</a></div>
+				<div class="navbar_menu-link"><a href="#contact">Contact Details</a></div>
+		</nav>
+	</header>
+	<header class="title">
+		<div class="title_image">
+			<img src="images/image.jpeg" alt="Prasit Raithatha" height="250px" width="250px" style="box-shadow: 20px 20px 15px black;">
+		</div>
+		<div class="title_name">
+			<p class="title_name-name">PRASIT RAITHATHA</p>
+			<p class="title_name-qoute">
+				A professional who considers inovation as his
+				prime objective
+			</p>
+		</div>
+	</header>
+	<section class="element_about" id="about">
+		<h2 class="element_about_heading">About Me</h2>
+		<hr class="element_about_line">
+		<p class="about_description">
+			I am a 2nd Year Student at Nirma University, Ahemdabad pursuing B.Tech in Computer Science and Engineering with specialization in Artificial Intelligence and Machine Learning. I have a keen interest in software devlopment and have worked on several projects using HTML, CSS, JavaScript. I am also proficient in Python, C, C++ and have experience working wih data Stuctures, Object Orirented Programming, machine learning libraries such as Pandas, NumPy, and Scikit-learn. I am a quick learner and always eager to take on new challenges.
+		</p>
+		</section>
+		<section class="element_education" id="edu">
+		<div class="element_education_decor">
+		<div class="element_education_heading">
+		<p>Education</p>
+		</div>
+		<br>
+		<hr class="element_education_line">
+		<div class="element_education_table" >
+			<table>
+				<tr>
+					<th>Degree</th>
+					<th>Institution</th>
+					<th>Year</th>
+					<th>Percentage/CGPA</th>
+				</tr>
+				<tr>
+					<td>B.Tech in Computer Science<br> and Engineering(AIML)</td>
+					<td>Nirma University, Ahmedabad</td>
+					<td>2025-2029</td>
+					<td>8.46 CGPA (Till 1st Year)</td>
+				</tr>
+				<tr>
+					<td>Higher Secondary Certificate (HSC)</td>
+					<td>Kennalily school for children, Ahmedabad</td>
+					<td>2025</td>
+					<td>90.2%</td>
+				</tr>
+				<tr>
+					<td>Secondary School Certificate (SSC)</td>
+					<td>Zydus School for excelence, Ahmedabad</td>
+					<td>2023</td>
+					<td>95%</td>
+				</tr>
+			</table>
+		</div>
+	    </div>
+		</section>
+		<section class="element_skills" id="skill">
+			<div class="element_skills_container">
+			</div>
+			<div class="element_skills_list">
+				<p>Skills</p>
+				<div class="element_skills_line">
+					
+				</div>
+				<div class="element_skills_list_description">
+				<ul class="skills_list">
+					<li>Web development</li>
+					<li>Python programming</li>
+					<li>C/C++ programming</li>
+					<li>Data Sturctures</li>
+					<li>Object Oriented Programming</li>
+					<li>Machine learning</li>
+					<li>Problem-solving</li>
+					<li>Teamwork</li>
+					<li>Communication</li>
+				</ul>
+			
+			
+			</div>
+			
+		</section>
+		<section class="element_projects" id="proj">
+			<div class="element_projects_header">
+			<p class="element_projects_heading">PROJECTS</p>
+			<div class="element_projects_line"></div>
+			</div>
+			<div class="element_projects_display">
+				<div class="element_projects_list">
+					<ul class="projects_list">
+						<li><a href="https://german-language-class.motkadarshan.workers.dev/" style="color:rgb(63, 221, 221);
+							text-decoration: none;" target="project_display">German Course Website</a></li>
+						<li><a href="projects/IWP Innovative/index.html" style="color:rgb(63, 221, 221);
+							text-decoration: none;" target="project_display">Sample Web Design</a></li>
+						<li><a href="https://github.com/whatisthisshloke/duplicate-file-detector" style="color:rgb(63, 221, 221);
+							text-decoration: none;" target="_blank">Python Porjects</a></li>
+						<li><a href="https://github.com/whatisthisshloke/memory-allocation-simulator" style="color:rgb(63, 221, 221);
+							text-decoration: none;" target="_blank">C/C++ Porjects</a></li>
+					</ul>
+				</div>
+				<div class="element_projects_iframe">
+					<iframe name="project_display" height="600px" width="800px" ></iframe>
+                </div>
+				
+			</div>
+		</section>
+		<footer class="element_contact" id="contact">
+			<div class="element_contact_header">
+			<h2 class="element_contact_heading">Contact Details</h2>
+			<hr class="element_contact_line">
+			</div>
+			<div class="element_contact_container">
+			<ul class="projects_list" style="list-style-type:none; font-size: 1.2rem; font-weight: 200; font-family: 'Poppins', sans-serif; margin-left: 50px;">
+					<li>Phone: +91 9104104441</li>
+					<li>Email: <a href="mailto:prasitraithatha20@gmail.com" target="_blank">prasitraithatha20@gmail.com</a></li>
+					<li>Instagram: <a href="https://www.instagram.com/prasitraithatha?igsh=ZmYxbXppcDZ3b21o" target="_blank">@prasitraithatha</a></li>
+					<li>LinkedIn: <a href="https://www.linkedin.com/in/prasit-raithatha-5b0b6b232/" target="_blank">Prasit Raithatha</a></li>
+					<li>GitHub: <a href="https://github.com/Prasit20" target="_blank">Prasit20</a></li>
+			</ul>
+			<div class="element_contact_image">
+				<img src="images/contact1 (2).jpg" alt="Contact Image" height="500px" width="300px">
+			</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
+

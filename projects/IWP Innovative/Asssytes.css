@@ -1,0 +1,371 @@
+body{
+    padding:0;
+    margin:0;
+    background-color: #000;
+}
+.carNav{
+    padding:10px 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Work Sans", sans-serif ;
+    font-size: 1rem;
+    font-weight: 350;
+    z-index: 1;
+    color:#fff;
+    transition: all 0.5s ease-in-out;
+}
+.carNavOverlayBg{
+    display:none;
+    margin:10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 25px 75px;
+    font-family: "Work Sans", sans-serif ;
+    font-size: 1rem;
+    font-weight: 350;
+    color:black;
+    background-color: rgba(214, 210, 210, 0.853);
+    width:45vw;
+    height: 85vh;
+    border-radius: 7.5px;
+}
+.carNavOverlay{
+   display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:45vw;
+    height: 85vh;
+
+}
+.carOverlayLinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.carNavOverlayCloseBtn{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 10px;
+    align-content: center;
+    font-family:"Work Sans", sans-serif ;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+    margin-left:-50px
+}
+.carNavOverlayList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+.carNavOverlayListItem{
+    padding: 5px 0px;
+    width: 100%;
+    border-bottom: 1px solid #b60000;
+}
+.carNavOverlayListItem:last-child{
+    border-bottom: none;
+}
+.carNavOverlayLinksMain{
+    text-decoration: none;
+    color: #000;
+    transition: all 0.5s ease-in-out;
+}
+.carNavOverlaySubList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    margin-top: 7px;
+    width: 100%;
+    font-size: 1rem;
+    color: #5d5d5d;
+}
+.carNavOverlayLinks{
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    color: #5d5d5d;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+.carNavOverlayCards{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding:25px
+}
+.carOverlayCard{
+    width: 20vw;
+    height: 17vh;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-top:25px;
+    flex:1;
+    border-radius: 7.5px;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+#card-1{
+    background-image: url(WhatsApp\ Image\ 2025-11-04\ at\ 22.09.31_f5911e4c.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#card-2{
+    background-image: url(forzastradale.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#card-3{
+    background-image: url(WhatsApp\ Image\ 2025-11-04\ at\ 22.09.31_f5911e4c.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.carNavBtns {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:20px;
+        align-items: center;
+}
+.carNavBtns a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 3px;
+    transition: all 0.5s ease-in-out;
+}
+.carNavBtns a:hover{
+    color: rgb(226, 0, 0);
+    text-shadow: #000 1px 1px 2px;
+}
+.carNavLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Mrs Saint Delafield", cursive; 
+    font-size: 3rem;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+}
+.carNavLogo p{
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+.carNavLogo a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}   
+.carNavLogo a:hover{
+    color: rgb(226, 0, 0);
+    font-weight: 500;
+    text-shadow: #000 1px 1px 2px
+}
+.carNavMenuBtn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    align-content: center;
+    font-family:"Work Sans", sans-serif ;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+}
+.carNavMenuBtn:hover{
+    color: rgb(226, 0, 0);
+    text-shadow: #000 1px 1px 2px;
+}
+.carHead{
+    background-image: url(Resources/vecteezy_mechanic-repairing-car-engine-with-wrench-tool_32943019.jpg);
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+.carHeadTitleOverlay{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap:5px;
+    height: 100vh;
+    text-align: bottom;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+}
+.borderBox{
+    border-left: 5px solid #b80000;
+    margin-top: 55vh;
+    align-content: center;
+    height:20vh;
+    backdrop-filter: blur(10px);
+    padding: 0px 10px
+}
+.accessoriesHeading{
+    font-family: "Encode Sans SC", sans-serif ;
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 0;
+}
+.headHL{
+    font-family: "Encode Sans SC", sans-serif;
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+.accessoriesSubHeading{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top:-10px;
+    padding: 0;
+}
+.accessoriesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color:#fff
+}
+.AeroDYnamics, .Exhaust, .Engine, .Interior{
+    padding:10px 50px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.AeroDYnamics{
+    background-image: url(Resources/generated-image\ \(4\).png);
+}
+.Engine{
+    background-image: url(Resources/pexels-quentin-martinez-2147503099-30706105.jpg);
+}
+.Exhaust{
+    background-image: url(Resources/pexels-safak-batura-518884812-17192720.jpg);
+}
+.Interior{
+    background-image: url(Resources/pexels-ammy-k-106103999-11968579.jpg);
+}
+.accessoryCardHeading{
+    font-family: "Raleway", sans-serif ;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.accessoriesSectionHeading{
+    font-family: "Syncopate", sans-serif ;
+    font-size: 4rem;
+    font-weight: 400;
+}
+.cardsContarner{
+    padding: 10px 100px;
+    margin-top:25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.accessoryCard, .InteriorCard1, .InteriorCard2, .InteriorCard3{
+    background-color: #1515154e;
+    backdrop-filter: blur(5px);
+    width: 20vw;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 50px ;
+    padding: 10px 25px;
+    border: 0.5px solid #4e4e4e7e;
+}
+.accessoryCard:hover{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(-10px);
+}
+.InteriorCard1:hover{
+    background-color: #1b3a4b;
+}
+.InteriorCard3:hover{
+    background-color: #ecf8f8;
+    color:#1b3a4b;
+}
+.InteriorCard2:hover{
+    background-color:  #fca311;
+    color:#042232;
+}
+.accessoryCardText{
+    font-family: "Raleway", sans-serif ;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+.accessoryCardBtn{
+    background-color: #fff;
+    border: none;
+    font-family: "Raleway", sans-serif ;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+.accessoryCardBtn:hover{
+    background-color: #b60000;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.summary{
+   padding:50px 100px;
+   display:none;
+   background-color: #000; 
+   color:#fff;
+   font-family:'Raleway', sans-serif;
+   font-size:1rem;
+}
+.summaryHead{
+    font-family: "Encode Sans SC", sans-serif;
+    font-size:3.2rem;
+    font-weight: 400;
+}
+.summary span{
+    font-size: 3rem;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register - Monterosi</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: url('/Resources/vecteezy_mechanic-repairing-car-engine-with-wrench-tool_32943019.jpg') center/cover fixed;
+            font-family: "Work Sans", sans-serif;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+
+        .registrationContainer {
+            position: relative;
+            z-index: 1;
+            max-width: fit-content;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(50px);
+            border-radius: 10px;
+            border: 1px solid rgba(178, 34, 34, 0.3);
+            padding: 50px;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-family: "Mrs Saint Delafield", cursive;
+            font-size: 4rem;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.5s ease;
+            display: block;
+            text-align: center;
+            align-items: center;
+        }
+
+        .logo:hover {
+            color: rgb(226, 0, 0);
+        }
+
+        .registrationTitle {
+            font-family: "Raleway", sans-serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .registrationSubtitle {
+            font-size: 1rem;
+            color: #b0b0b0;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .formTable {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .formTable td {
+            padding: 11px 0;
+            vertical-align: top;
+            padding-right: 20px;
+            
+        }
+
+        .formLabel {
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #b22222;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .formInput {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 14px 18px;
+            font-size: 0.95rem;
+            color: #fff;
+            font-family: "Work Sans", sans-serif;
+            transition: all 0.3s ease;
+            outline: none;
+            width: 100%;
+        }
+
+        .formInput:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #b22222;
+            box-shadow: 0 0 0 3px rgba(178, 34, 34, 0.15);
+        }
+
+        .formInput::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .formSelect {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            padding: 14px 18px;
+            font-size: 0.95rem;
+            color: #fff;
+            font-family: "Work Sans", sans-serif;
+            transition: all 0.3s ease;
+            outline: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .formSelect:focus {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #b22222;
+            box-shadow: 0 0 0 3px rgba(178, 34, 34, 0.15);
+        }
+
+        .formSelect option {
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        .checkboxCell {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .checkboxInput {
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            cursor: pointer;
+            accent-color: #b22222;
+            flex-shrink: 0;
+        }
+
+        .checkboxLabel {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            line-height: 1.5;
+        }
+
+        .checkboxLabel a {
+            color: #b22222;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .checkboxLabel a:hover {
+            color: rgb(226, 0, 0);
+            text-decoration: underline;
+        }
+
+        .submitBtn {
+            background: linear-gradient(135deg, #b22222 0%, #8b0000 100%);
+            border: none;
+            border-radius: 6px;
+            padding: 16px 40px;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: "Work Sans", sans-serif;
+            width: 100%;
+        }
+
+        .submitBtn:hover {
+            background: linear-gradient(135deg, #d32f2f 0%, #b22222 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(178, 34, 34, 0.5);
+        }
+
+        .submitBtn:active {
+            transform: translateY(0);
+        }
+
+        .loginLink {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+        }
+
+        .loginLink a {
+            color: #b22222;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .loginLink a:hover {
+            color: rgb(226, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="registrationContainer">
+       <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-bottom: 15px;" colspan="2">
+                    <a href="index.html" class="logo">Monterosi</a>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-bottom: 8px;">
+                    <h1 class="registrationTitle">Join the Elite</h1>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="padding-bottom: 30px;">
+                    <p class="registration-subtitle">Begin your journey with automotive excellence</p>
+                </td>
+            </tr>
+        </table>
+
+        <form id="registrationForm">
+            <table class="formTable">
+                <tr>
+                    <td width="50%">
+                        <label class="formLabel" for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="formInput" placeholder="John" required>
+                    </td>
+                    <td width="50%">
+                        <label class="formLabel" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="formInput" placeholder="Doe" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="formLabel" for="email">Email Address</label>
+                        <input type="email" id="email" class="formInput" placeholder="john.doe@example.com" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%">
+                        <label class="formLabel" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="formInput" placeholder="1234567890" required>
+                    </td>
+                    <td width="50%">
+                        <label class="formLabel" for="country">Country</label>
+                        <select id="country" class="formSelect" required>
+                            <option value="">Select Country</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="de">Germany</option>
+                            <option value="it">Italy</option>
+                            <option value="fr">France</option>
+                            <option value="ae">United Arab Emirates</option>
+                            <option value="in">India</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="formLabel" for="password">Password</label>
+                        <input type="password" id="password" class="formInput" placeholder="Create a strong password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="formLabel" for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" class="formInput" placeholder="Re-enter your password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="formLabel" for="interest">Primary Interest</label>
+                        <select id="interest" class="formSelect" required>
+                            <option value="">Select your interest</option>
+                            <option value="supercars">Supercars</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="checkboxCell">
+                            <input type="checkbox" id="terms" class="checkboxInput" required>
+                            <label for="terms" class="checkboxLabel">
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 20px;" colspan="2">
+                        <button type="submit" class="submitBtn">Create Account</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            if (password.length < 8) {
+                alert('Password must be at least 8 characters long.');
+                return;
+            }
+            
+            
+            alert('Registration successful! Welcome to Monterosi.');
+        });
+    </script>
+</body>
+</html>
